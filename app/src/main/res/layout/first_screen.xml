@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/image"
+        android:scaleType="fitStart" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="200dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"
+            android:background="#FFFFFF"
+            android:text="CheckFake"
+            android:textColor="#FFC107"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6E6E6E"
+            android:layout_marginRight="20dp"
+            android:text="CheckFake에 오신것을 환영합니다.\n 딥페이크 영상을 탐지하는\n 범죄 방지 애플리케이션"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_gravity="right"
+            />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:text="Login"
+            app:backgroundTint="#FF9800"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/sign"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Create an account"
+            app:backgroundTint="@android:color/white"
+            android:background="#00ff0000"
+            android:textColor="#6E6E6E"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
