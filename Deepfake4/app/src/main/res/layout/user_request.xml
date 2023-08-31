@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoAdapter"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text = "1. 판별 결과값이 맞았는지 틀렸는지 알려주세요"/>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct" />
+
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wrong" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I don't know" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "2. 영상의 출처를 알려주세요"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="통화"
+            android:textSize="10sp" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="인터넷"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기타"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/Else"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="기타인 경우 출처를 입력해주세요"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:textSize="6sp" />
+
+        </RadioGroup>
+
+    <EditText
+        android:id="@+id/sendReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="[선택] 발신번호를 입력해주세요"
+        android:inputType="phone"
+        android:importantForAutofill="no"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/sendReview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="[선택] 리뷰를 남겨주세요"
+        android:inputType="textMultiLine"
+        android:importantForAutofill="no"
+        android:textSize="10sp" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전송"
+        android:textSize="10sp" />
+
+
+</LinearLayout>
