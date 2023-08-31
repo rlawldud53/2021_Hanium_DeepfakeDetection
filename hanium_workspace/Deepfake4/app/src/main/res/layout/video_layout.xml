@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/logo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="CheckFake"
+                    android:textColor="@color/black"
+                    android:textSize="35dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="right">
+
+                    <ImageButton
+                        android:id="@+id/home"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/home" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="-Check Video"
+                android:textSize="30dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+
+                android:background="@drawable/border2"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Enter video source"
+                android:textColorHint="#F5DA81"
+                android:textColor="#F5DA81"
+                android:paddingLeft="15dp"
+                android:textSize="25dp" />
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+
+                android:background="@drawable/border2"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Enter sender's number"
+                android:textColorHint="#F5DA81"
+                android:textColor="#F5DA81"
+                android:paddingLeft="15dp"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="[선택]이 비디오가 Trending DB에 업로드되는 것에 동의합니다"
+                    android:textColor="#F5BA81"
+                    android:textSize="11dp" />
+
+                <CheckBox
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/pickVideo"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#FF9800"
+                android:text="Pick a video and view"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showresult"
+                android:layout_width="match_parent"
+                android:layout_height="218dp"
+                android:layout_margin="20dp"
+                android:background="#D8D8D8"
+                android:gravity="top"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="25dp"
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+
